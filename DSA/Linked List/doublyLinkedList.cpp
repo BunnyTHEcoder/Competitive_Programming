@@ -18,7 +18,7 @@ class node{
     node* pre;
 
     node(int data){
-        this->data=data;
+        this->data = data;
         this->next=NULL;
         this->pre=NULL;
     }

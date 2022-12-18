@@ -1,52 +1,37 @@
-#include <bits/stdc++.h>
-using namespace std;
- 
-class Node {
-public:
-    int data;
-    Node* next;
-};
- 
+#include <iostream>
+#include <vector>
 
-void printList(Node* n)
-{
-    while (n != NULL) {
-        cout << n->data << " ";
-        n = n->next;
-    }
-}
- 
+using namespace std;
 
 int main()
 {
-    Node* head = NULL;
-    Node* second = NULL;
-    Node* third = NULL;
- 
- 
-    head = new Node();
-    second = new Node();
-    third = new Node();
-    int w;
-    cout<<"enter first data"<<endl;
-    cin>>w;
-    head->data = w; 
-    head->next = second;
- 
-    cout<<"enter second data"<<endl;
-    int y;
-    cin>>y;
-    second->data = y; 
-    second->next = third;
- 
-    cout<<"enter third data"<<endl;
-    int z;
-    cin>>z;
-    third->data = z;
-    third->next = NULL;
- 
-    cout<<"displaying data : ";
-    printList(head);
- 
-    return 0;
+    // Declaring vector
+	vector<int> g1;
+
+	for (int i = 1; i <= 5; i++)
+        // pushing elements in vector g1
+		g1.push_back(i);
+
+	cout << "Size : " << g1.size();
+	cout << "\nCapacity : " << g1.capacity();
+	cout << "\nMax_Size : " << g1.max_size();
+
+	// resizes the vector size to 4
+	g1.resize(4);
+
+	// prints the vector size after resize()
+	cout << "\nSize : " << g1.size();
+
+	// checks if the vector is empty or not
+	if (g1.empty() == false)
+		cout << "\nVector is not empty";
+	else
+		cout << "\nVector is empty";
+
+	
+	cout << "\nVector elements are: ";
+	for (auto it = g1.begin(); it != g1.end(); it++)
+		cout << *it << " ";
+
+	return 0;
 }

@@ -1,4 +1,4 @@
-## Data Structure and Types
+## Data Structure And Types
 
 ### What are Data Structures:
 ```

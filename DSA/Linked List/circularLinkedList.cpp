@@ -13,7 +13,7 @@
 using namespace std;
 class node{
     public:
-    int data;
+    int  data;
     node* next;
 
     node(int data){

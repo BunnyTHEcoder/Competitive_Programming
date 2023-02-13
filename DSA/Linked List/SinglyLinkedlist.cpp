@@ -5,7 +5,7 @@
 #define pb push_back
 #define minn INT_MIN 
 
-#define maxx INT_MAX 
+#define maxx  INT_MAX 
 #define el endl
 #define sp " "
 #define fo(i,n) for(int i=0;i<n;i++)

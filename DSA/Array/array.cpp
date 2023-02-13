@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int n;  //array size
+    int n ;  //array size
     cin>>n;
     int arr[n];  //Decalring array
     for(int i=0; i<n; i++)

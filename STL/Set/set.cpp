@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	// declaring set
-	set<int> st;
+	set<int>  st;
 
 	// declaring iterators
 	set<int>::iterator it = st.begin();
